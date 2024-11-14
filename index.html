@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volume of a Trapezoid Mud Tank</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Additional line added to link manifest to the index file -->
+    <link rel="manifest" href="manifest.json" />
+    <!-- End of manifest link addition -->
+  </head>
+  <body>
+    <div class="container">
+      <h2>Volumes in Trapezoid Mud Tanks</h2>
+      <form id="trapezoidtank">
+        <label for="basewidth"
+          ><strong>Base width of tank in meters</strong></label
+        >
+        <input
+          type="number"
+          id="basewidth"
+          name="basewidth"
+          step="0.01"
+          placeholder="Enter bottom width of tank in meters"
+          required
+        />
+
+        <label for="topwidth"
+          ><strong>Top width of tank in meters</strong></label
+        >
+        <input
+          type="number"
+          id="topwidth"
+          name="topwidth"
+          step="0.01"
+          placeholder="Enter top width of the tank in meters"
+          required
+        />
+
+        <label for="totalheight"
+          ><strong>Enter height of the tank in meters:</strong></label
+        >
+        <input
+          type="number"
+          id="totalheight"
+          name="totalheight"
+          step="0.01"
+          placeholder="Enter height of tank in meters"
+          required
+        />
+
+        <label for="tanklength"
+          ><strong>Enter length of the tank in meters:</strong></label
+        >
+        <input
+          type="number"
+          id="tanklength"
+          name="tanklength"
+          step="0.01"
+          placeholder="Enter length of tank in meters"
+          required
+        />
+
+        <label for="liquidheight"
+          ><strong>Enter height of Liquid in meters:</strong></label
+        >
+        <input
+          type="number"
+          id="liquidheight"
+          name="liquidheight"
+          step="0.01"
+          placeholder="Enter height of liquid in meters"
+          required
+        />
+
+        <label for="fluiddensity"
+          ><strong>Enter Fluid Density in Kg/liter:</strong></label
+        >
+        <input
+          type="number"
+          id="fluiddensity"
+          name="fluiddensity"
+          step="0.01"
+          placeholder="Enter fluid density of fluid Kg/liter"
+          required
+        />
+
+        <button type="button" onclick="CalculateVolumes()">
+          <strong>Calculate the Results</strong>
+        </button>
+      </form>
+
+      <div id="result"></div>
+
+      <!-- Footer with copyright notice -->
+      <footer>
+        <p>&copy; 2024 Ranjit Singh. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- Service Worker Registration -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("./service-worker.js")
+          .then((registration) => {
+            console.log(
+              "Service Worker registered with scope:",
+              registration.scope
+            );
+          })
+          .catch((error) => {
+            console.error("Service Worker registration failed:", error);
+          });
+      }
+    </script>
+  </body>
+</html>

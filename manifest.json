@@ -1,0 +1,40 @@
+{
+  "name": "Vol Trapezoid Tank",
+  "short_name": "TrapezoidTank",
+  "start_url": "index.html",
+  "id": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4CAF50",
+  "icons": [
+    {
+      "src": "maskable512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "MudTank192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "SSNarrow650x100.png",
+      "sizes": "650x1000",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "SSwide1200x600.png",
+      "sizes": "1200x600",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "window_controls_overlay": {
+    "color": "#ffffff"
+  },
+  "description": "This app calculates volumes of Partially filled Trapezoidal Tank"
+}
